@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .FlexContainer{
+          border: 2px solid black;
+          display:flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          justify-content: center;
+          min-height: 200px;
+          min-width: 200px;
+      }
+      .FlexItem{
+          width:200px;
+          margin:10px;
+          border: 2px solid black;
+          background-color: aquamarine;
+      }
+      .FlexItem1{
+          min-height: 50px;
+          min-width: 25px;
+        flex: 1;
+        align-self: flex-start;
+      }
+      .FlexItem2{
+         min-height: 125px; 
+         min-width: 25px;
+        flex: 3;
+        align-self: flex-start;
+      }
+      .FlexItem3{
+          min-height: 75px;
+          min-width: 25px;
+         flex: 2;
+         align-self: flex-start;
+      }
+      .FlexItem4{
+        min-height: 75px;
+        min-width: 25px;
+        flex: 2;
+        align-self: flex-end;
+         
+      }
+      .FlexItem5{
+        min-height: 50px;
+        min-width: 25px;
+        flex:1;
+        align-self: flex-end;
+      }
+    </style>
+</head>
+<body>
+    <div class="FlexContainer">
+        <div class="FlexItem FlexItem1"> 1 </div>
+        <div class="FlexItem FlexItem2"> 2 </div>
+        <div class="FlexItem FlexItem3"> 3 </div>
+        <div class="FlexItem FlexItem4"> 4 </div>
+        <div class="FlexItem FlexItem5"> 5 </div>
+    </div>
+</body>
+</html>

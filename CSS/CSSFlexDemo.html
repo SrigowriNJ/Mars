@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            display: flex;
+            flex-direction: column;
+            height: 300px;
+            flex-wrap: wrap;
+        }
+        .flex-container2 > .flex-container{
+            display:flex;
+            flex-direction: row;
+            min-height: 200px;
+            min-width: 400px;
+        }
+        .green{
+            background:green;
+            padding: 20px;
+            margin:20px
+        }
+        .yellow{
+            background: yellow;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width:100px;
+            height:100px;
+            margin:20px;
+            padding: 20px;
+           
+        }
+        .red{
+            background: red;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width:100px;
+            height:100px;
+            margin:20px;
+            padding:20px;
+           
+        }
+        .blue{
+            background: blue;
+            margin:20px;
+            padding:20px;
+        
+        }
+        .orange{
+            background: orange;
+            margin:20px;
+            padding:20px;
+        }
+        .flex-container > div{
+            margin: 20px;
+            padding: 20px;
+
+        }
+        .nested-flex{
+            display: flex;
+            flex-wrap: wrap;
+            padding:5px;
+            margin:10px;
+            background: white;
+        }
+    </style>
+</head>
+<body>
+   <div class=".flex-container">
+           <div class="green">GREEN</div>
+            <div class=".flex-container2">
+             <div class="yellow">YELLOW
+               <div class="nested-flex"> 1</div>
+               <div class="nested-flex"> 2</div>
+               <div class="nested-flex"> 3</div>
+               <div class="nested-flex"> 4</div>
+             </div>
+            
+             <div class="red">RED 
+             <div class="nested-flex"> A </div>
+             <div class="nested-flex"> B</div>
+             <div class="nested-flex"> C</div>
+             <div class="nested-flex"> D</div>
+             </div>
+
+             <div class="blue"> BLUE</div>
+
+            </div>
+        
+     <div class="orange"> ORANGE</div>
+   </div> 
+</body>
+</html>

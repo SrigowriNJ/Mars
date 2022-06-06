@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body{
+            display:flex;
+            min-height: 400px;
+            flex-direction: column;
+        }
+        header,footer{
+            background-color:mediumslateblue;
+            min-height: 20px;
+            flex:1;
+            margin: 1%;
+            padding:5%;
+        }
+        .main{
+            background-color: mediumslateblue;
+            min-height: 100px;
+            flex:3;
+            margin: 1%;
+            padding: 5%;
+        }
+        .nested_flex{
+            justify-content: space-between;
+            display:flex;
+            flex-direction: row;
+            flex:2;
+            margin: 10px;
+            padding:5px;
+        }
+        .nested_flex1{
+            background-color: mediumslateblue;
+            justify-content:center;
+            display:flex;
+            justify-content: space-between;
+            flex:1;
+            flex-direction: column;
+            margin: 10px;
+            padding: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <div class="nested_flex">
+        <div class="nested_flex1"> article </div>   
+        <div class="nested_flex1" >
+            <div class="nested_flex1"> text 1</div>
+            <div class="nested_flex1"> text 2</div>
+        </div>
+        
+    </div>
+    <div class="main"> Main </div>
+    <footer>Footer</footer>
+</body>
+</html>

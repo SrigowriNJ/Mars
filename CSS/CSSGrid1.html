@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            display:grid;
+            min-height: 400px;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(4,1fr);
+            gap: 5px;
+        }
+        .pinkbox{
+            color:black;
+            font-size: 5vw;
+            padding: 10px;
+            background-color: lightpink;
+            text-align: center;
+        }
+        .bluebox{
+            color:black;
+            font-size: 5vw;
+            padding: 10px;
+            background-color: lightblue;
+            text-align: center;
+        }
+        .greenbox{
+            color:black;
+            font-size: 5vw;
+            padding: 10px;
+            background-color: lightgreen;
+            text-align: center;
+        }
+        .pinkbox:nth-child(1){
+            grid-row: span 2;
+        }
+        .greenbox:nth-child(4){
+            grid-column: span 2;
+        }
+        .pinkbox:nth-child(7){
+            grid-row: span 2;
+        }
+        .greenbox:nth-child(8){
+            grid-column: span 2;
+        }
+    </style>
+</head>
+<body>
+    <main class="grid">
+        <div class="pinkbox">1</div>
+        <div class="bluebox">2</div>
+        <div class="bluebox">3</div>
+        <div class="greenbox">4</div>
+        <div class="bluebox">5</div>
+        <div class="bluebox">6</div>
+        <div class="pinkbox">7</div>
+        <div class="greenbox">8</div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .close {
+            background-color: red;
+                color: white; 
+                opacity: 1;
+              }
+        .nav-link{
+            color:grey !important;
+            opacity: 1;
+        }   
+
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">LOGO</span>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"> Messages <span class="badge text-bg-success">12</span></a>
+              </li>
+           <li>
+          </ul>
+          
+        </div>
+        </nav>
+        <div>
+            <h3>Dashboard:</h3>
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Team</th>
+                    <th scope="col">All Star</th>
+                    <th scope="col">Remove</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td scope="row">Steph</td>
+                    <td>Warriors</td>
+                    <td>Yes</td>
+                    <td><button type="button" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Lebron</td>
+                    <td>Cavaliers</td>
+                    <td>Yes</td>
+                    <td><button type="button" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Dwayne</td>
+                    <td>Heat</td>
+                    <td>Yes</td>
+                    <td><button type="button" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Kobe</td>
+                    <td>Lakers</td>
+                    <td>Yes <span class="badge text-bg-warning">Last</span></td>
+                    <td><button type="button" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Isaiah</td>
+                    <td>Celtics</td>
+                    <td>Yes <span class="badge text-bg-success">First</span></td>
+                    <td><button type="button" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        <div class="ToDos">
+            <h3>To Dos</h3>
+            <div class="alert alert-success" role="alert">
+                Feel good about Bootstrap!
+            </div>
+            <div class="alert alert-info" role="alert">
+                Feel informed about Bootstrap!
+            </div>
+            <div class="alert alert-warning" role="alert">
+                Feel warned about Bootstrap!
+            </div>
+            <div class="alert alert-warning" role="alert">
+                Maybe I should read the docs!
+            </div>
+            <div class="alert alert-danger" role="alert">
+               Danger Zone!
+            </div>
+            <div class="alert alert-danger" role="alert">
+               I really should read the docs!!
+            </div>
+        </div>
+</body>
+</html> 

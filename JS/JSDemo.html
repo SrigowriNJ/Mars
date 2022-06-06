@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Calculator Demo</h3>
+    <form>
+        <label for="FirstNumber">Enter first number:</label>
+        <input type="number" id="FirstNumber" name="FirstNumber"><br><br>
+        <label for="SecondNumber">Enter second number:</label>
+        <input type="number" id="SecondNumber" name="SecondNumber"><br><br>
+
+        <button type="button" onclick="add(event)">Add</button>
+        <button type="button" onclick="subtract(event)">Subtract</button>
+        <button type="button" onclick="multiply(event)">Multiply</button>
+        <button type="button" onclick="divide(event)">Divide</button>
+        <br><br>
+        Result:
+        <div id="Result">
+          
+        </div>
+        <script src="calc.js"></script>
+    </form>
+    
+</body>
+</html>
