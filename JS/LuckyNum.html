@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <form>
+      <h3>Guessing game</h3>
+      <label for="LuckyNumber" > <b>Guess my lucky number: </b></label>
+      <input type="number" id="InputNumber" name="InputNumber"  >
+  </form> <br>
+  <input type="submit" value="Check" onclick="checkNumber()" ><br><br>
+  <p>
+      <span id="MessageDisplay"></span>
+  </p>
+</body>
+<script>
+    var attemptNum=1;  //Initializing the number of attempts 
+    function checkNumber(){
+    var myLuckyNum=8;  //Hardcoding the lucky number
+    var inputNum=document.getElementById("InputNumber").value; //Getting the input number
+    //alert(inputNum)
+    //Comparing the numbers and sending appropriate message
+    if(myLuckyNum==inputNum){
+        var Message="Great!! You took "+attemptNum+" attempt/s to guess it right";
+    }
+    else{
+        attemptNum++;
+        var Message="Not really! Give it another try";
+    }
+    document.getElementById("MessageDisplay").innerHTML=Message;
+    }
+</script>
+</html>
