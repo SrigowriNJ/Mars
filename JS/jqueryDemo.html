@@ -11,7 +11,7 @@
     <button onclick="getData()">
      click to load data
     </button>
-    <div id="showData"></div>
+    <ul id="userList"></ul>
     <script>
         function getData(){
             $.ajax({
@@ -23,13 +23,19 @@
                 },
                 success:(data)=>{
                  // console.log(data);
+                 /*
                  var resultArr=data.map(item => {
-                     const result={};
-                     result.id=item.id;
-                     result.name=item.name;
-                     return result;
-                 })
-                 console.log(resultArr)
+                    const temp={};
+                     temp.id=item.id;
+                     temp.name=item.name;
+                     return temp;
+                 })*/
+                 data.map((item) =>{
+                    $("#userList").append(
+                        "<li>"+ item.id +"--"+ item.name +"</li>"
+                    );
+                 });
+                 //document.getElementById("showData").innerHTML=JSON.stringify(resultArr);
                 },
                 error:(err)=>{
                     console.log(err);
