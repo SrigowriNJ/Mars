@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <button onclick="getData()">
+     click to load data
+    </button>
+    <div id="showData"></div>
+    <script>
+        function getData(){
+            $.ajax({
+                url:"https://gorest.co.in/public/v2/users",
+                dataType:'json',
+                type:'GET',
+                data:{
+                    key:'value'
+                },
+                success:(data)=>{
+                 // console.log(data);
+                 var resultArr=data.map(item => {
+                     const result={};
+                     result.id=item.id;
+                     result.name=item.name;
+                     return result;
+                 })
+                 console.log(resultArr)
+                },
+                error:(err)=>{
+                    console.log(err);
+                }
+
+            })
+        }
+    </script>
+</body>
+</html>
